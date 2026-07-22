@@ -383,18 +383,18 @@ app.post("/linkingUserWithOrder",(req,res)=>{
 })
 
 
-app.listen(3000,(err)=>{
-    if(err) console.log(err)
+const PORT = process.env.PORT || 3000;
 
+app.listen(PORT, (err) => {
+  if (err) console.log(err);
 
-    dbCon.connect((err)=>{
-        if(err)console.log(err)
+  dbCon.connect((err) => {
+    if (err) console.log(err);
 
+    console.log("MySQL Connected");
+  });
 
-    console.log("Mysql Concneted")
-    })
-    console.log("Server Is Runing")
-
-})
+  console.log(`Server is running on port ${PORT}`);
+});
 
 
