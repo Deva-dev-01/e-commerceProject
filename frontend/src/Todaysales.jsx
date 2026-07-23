@@ -47,7 +47,7 @@ setFilterData(arr)
     const [data1,setData1]=useState([])
 
     useEffect(()=>{
-                 const res = fetch("http://localhost:3000/Todaysales")
+                 const res = fetch("https://e-commerceproject-1-9s8s.onrender.com/Todaysales")
                     .then(res=>res.json())
                     .then(data=>setData1(data))
    
