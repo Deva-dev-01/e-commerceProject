@@ -90,7 +90,7 @@ const {wishlistCount,cartCount}=useContext(WishlistContext)
         </a>
          
             
-        <a href="https://e-commerce-project-klrzqnwg6-dev642008-6750s-projects.vercel.app/SignUp">
+        <a href="/SignUp">
             <span className="hover:font-medium hover:underline">SignUp</span>
         </a>
 
