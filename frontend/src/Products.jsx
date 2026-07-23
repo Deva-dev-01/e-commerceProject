@@ -19,7 +19,7 @@ function Products(){
         }
         
         useEffect(()=>{
-            const res = fetch("http://localhost:3000/Products")
+            const res = fetch("https://e-commerceproject-1-9s8s.onrender.com/Products")
                 .then(res=>res.json())
                 .then(data=>setData1(data))
         },[])
