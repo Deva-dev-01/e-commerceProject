@@ -1,13 +1,15 @@
-import sql from "mysql2"
+import mysql from "mysql2";
+import dotenv from "dotenv";
+dotenv.config();
 
-export const dbCon = sql.createConnection({
-
-    host: "127.0.0.1",
-    port: 3306,
-    database: "product_db",
-    user: "root",
-    password: "KaviArasan@123",
-
-
+export const dbCon = mysql.createPool({
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    database: process.env.DB_DATABASE,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    ssl: { rejectUnauthorized: false },
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0
 })
-
