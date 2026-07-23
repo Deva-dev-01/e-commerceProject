@@ -52,7 +52,7 @@ const { wishlistCount, setWishlistCount ,cartCount,setCartCount } = useContext(W
     
       function press1(){
 
-        const res= fetch("http://localhost:3000/getWishlist",{
+        const res= fetch("https://e-commerceproject-1-9s8s.onrender.com/getWishlist",{
             method: "POST",
             headers:{
                 "Content-Type": "application/json"
@@ -73,7 +73,7 @@ const { wishlistCount, setWishlistCount ,cartCount,setCartCount } = useContext(W
       }
 
       function press2(){
-        const res= fetch("http://localhost:3000/getCart",{
+        const res= fetch("https://e-commerceproject-1-9s8s.onrender.com/getCart",{
             method: "POST",
             headers:{
                 "Content-Type": "application/json"
@@ -92,7 +92,7 @@ const { wishlistCount, setWishlistCount ,cartCount,setCartCount } = useContext(W
 
   function press(id){
 
-        const res =  fetch("http://localhost:3000/removeWishlist",{
+        const res =  fetch("https://e-commerceproject-1-9s8s.onrender.com/removeWishlist",{
                                 method: "POST",
                                 headers:{
                                 "Content-Type": "application/json"
