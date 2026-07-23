@@ -11,7 +11,7 @@ export const WishlistProvider=({children})=>{
     const [subtotal,setSubtotal]=useState(0);
 
     useEffect(()=>{
-    const res=fetch("http://localhost:3000/Navbar")
+    const res=fetch("https://e-commerceproject-1-9s8s.onrender.com/Navbar")
         .then(res=>res.json())
         .then(data=>setWishlistCount(data.wishlist))
         
@@ -20,7 +20,7 @@ export const WishlistProvider=({children})=>{
     },[])
 
     useEffect(()=>{
-    const res=fetch("http://localhost:3000/Navbar1")
+    const res=fetch("https://e-commerceproject-1-9s8s.onrender.com/Navbar1")
         .then(res=>res.json())
         .then(data=>setCartCount(data.cart))
         
