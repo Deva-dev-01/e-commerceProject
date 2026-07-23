@@ -22,7 +22,7 @@ function Checkout(){
         
     
     useEffect(()=>{
-                             const res = fetch("http://localhost:3000/Cart")
+                             const res = fetch("https://e-commerceproject-1-9s8s.onrender.com/Cart")
                                 .then(res=>res.json())
                                 .then(data=>setData1(data))
                
@@ -98,7 +98,7 @@ function Checkout(){
                 return;
             }
 
-            const res =  fetch("http://localhost:3000/billingDetails",{
+            const res =  fetch("https://e-commerceproject-1-9s8s.onrender.com/billingDetails",{
             method: "POST",
             headers:{
                 "Content-Type": "application/json"
@@ -124,7 +124,7 @@ function Checkout(){
 
         // console.log({productsId:idStr,quantity:quantityStr,total:'$'+String(val),payment:payment,couponCode:coupon})
 
-        const responce =  fetch("http://localhost:3000/billingProducts",{
+        const responce =  fetch("https://e-commerceproject-1-9s8s.onrender.com/billingProducts",{
             method: "POST",
             headers:{
                 "Content-Type": "application/json"
@@ -137,7 +137,7 @@ function Checkout(){
 
         
     
-        const ret =  fetch("http://localhost:3000/fetchingOrderId",{
+        const ret =  fetch("https://e-commerceproject-1-9s8s.onrender.com/fetchingOrderId",{
             method: "POST",
             headers:{
                 "Content-Type": "application/json"
@@ -149,7 +149,7 @@ function Checkout(){
                     .then(console.log(orderId))
 
         
-        const rete =  fetch("http://localhost:3000/linkingUserWithOrder",{
+        const rete =  fetch("https://e-commerceproject-1-9s8s.onrender.com/linkingUserWithOrder",{
             method: "POST",
             headers:{
                 "Content-Type": "application/json"
