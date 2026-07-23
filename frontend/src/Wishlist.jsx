@@ -17,7 +17,7 @@ function Wishlist(){
 
     
      useEffect(()=>{
-                     const res = fetch("http://localhost:3000/Wishlist")
+                     const res = fetch("https://e-commerceproject-1-9s8s.onrender.com/Wishlist")
                         .then(res=>res.json())
                         .then(data=>setData1(data))
        
