@@ -12,7 +12,6 @@ import { Link, NavLink } from 'react-router-dom';
 import { WishlistContext } from "./WishlistContext.jsx"
 // import { CardData } from "./Card"
 
-import { Link } from "react-router-dom"
 
 
 function Navbar(){
