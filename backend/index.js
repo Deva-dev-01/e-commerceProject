@@ -148,16 +148,30 @@ app.post("/Login",(req,res)=>{
 })
 
 
-app.get("/Todaysales",(req,res)=>{
-    const querye = "Select * from flash_sales_details ;"
-        dbCon.query(querye,(err,resl)=>{
+// app.get("/Todaysales",(req,res)=>{
+//     const querye = "Select * from flash_sales_details ;"
+//         dbCon.query(querye,(err,resl)=>{
 
-            if(err) console.log(err)
+//             if(err) console.log(err)
 
-                // console.log(resl)
-                res.send(resl)
-        })
+//                 // console.log(resl)
+//                 res.send(resl)
+//         })
+// })
+
+
+
+app.get("/Todaysales", (req, res) => {
+    const querye = "Select * from flash_sales_details;"
+    dbCon.query(querye, (err, res1) => {
+        if (err) {
+            console.log(err)
+            return res.status(500).send({ error: err.message })
+        }
+        res.send(res1)
+    })
 })
+
 
 app.get("/Products",(req,res)=>{
     const querye = "Select * from best_sellings ;"
