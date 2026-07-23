@@ -54,7 +54,7 @@ function Signup(){
                 return;
             }
 
-            const res =fetch("http://localhost:3000/SignUp",{
+            const res =fetch("https://e-commerceproject-1-9s8s.onrender.com/SignUp",{
                 method:"POST",
                 headers: {
                             "Content-Type": "application/json",
