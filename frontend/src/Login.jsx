@@ -52,7 +52,7 @@ function Login(){
                 return;
             }
 
-       const res =  fetch("http://localhost:3000/Login",{
+       const res =  fetch("https://e-commerceproject-1-9s8s.onrender.com/Login",{
             method: "POST",
             headers:{
                 "Content-Type": "application/json"
