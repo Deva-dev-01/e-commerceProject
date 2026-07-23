@@ -8,8 +8,8 @@ import image5 from "/images/Search.png"
 
 function Hero(){
 
-    const arr=[{id:1,data:"hello1"},{id:2,data:"hello2"},{id:3,data:"hello3"}]
-    console.log(arr.filter((item)=>item.id==2))
+    // const arr=[{id:1,data:"hello1"},{id:2,data:"hello2"},{id:3,data:"hello3"}]
+    // console.log(arr.filter((item)=>item.id==2))
     
     return(
         <>
