@@ -26,7 +26,7 @@ export const Cartcard = ({id,image,star,name,newprice,oldprice,keywords,quantity
 
             console.log(id)
 
-            const res =  fetch("http://localhost:3000/productCount",{
+            const res =  fetch("https://e-commerceproject-1-9s8s.onrender.com/productCount",{
                                 method: "POST",
                                 headers:{
                                 "Content-Type": "application/json"
@@ -43,7 +43,7 @@ export const Cartcard = ({id,image,star,name,newprice,oldprice,keywords,quantity
             setCount(--Count);
             setSubtotal(subtotal - num)
 
-            const res =  fetch("http://localhost:3000/productCount",{
+            const res =  fetch("https://e-commerceproject-1-9s8s.onrender.com/productCount",{
                                 method: "POST",
                                 headers:{
                                 "Content-Type": "application/json"
