@@ -48,7 +48,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/About" element={<About />} />
-        <Route path="https://e-commerce-project-klrzqnwg6-dev642008-6750s-projects.vercel.app/SignUp" element={<Signup/>} />
+        <Route path="/SignUp" element={<Signup/>} />
         <Route path="/SignUp/Login" element={<Login/>} />
         <Route path="/Home/Cart" element={<Cart/>} />
         <Route path="/Home/Wishlist" element={<Wishlist/>} />
