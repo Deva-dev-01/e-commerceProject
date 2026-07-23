@@ -12,6 +12,9 @@ import { Link, NavLink } from 'react-router-dom';
 import { WishlistContext } from "./WishlistContext.jsx"
 // import { CardData } from "./Card"
 
+import { Link } from "react-router-dom"
+
+
 function Navbar(){
     // console.log(CardData.Consumer.name)
     
@@ -90,9 +93,9 @@ const {wishlistCount,cartCount}=useContext(WishlistContext)
         </a>
          
             
-        <a href="/SignUp">
+        <Link href="/SignUp">
             <span className="hover:font-medium hover:underline">SignUp</span>
-        </a>
+        </Link>
 
 
 
