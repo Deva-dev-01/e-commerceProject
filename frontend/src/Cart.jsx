@@ -23,7 +23,7 @@ function Cart(){
 
 
     useEffect(()=>{
-                         const res = fetch("http://localhost:3000/Cart")
+                         const res = fetch("https://e-commerceproject-1-9s8s.onrender.com/Cart")
                             .then(res=>res.json())
                             .then(data=>setData1(data))
            
@@ -32,7 +32,7 @@ function Cart(){
              function press(item){
                 // console.log(item)
 
-                    const res =  fetch("http://localhost:3000/removeCart",{
+                    const res =  fetch("https://e-commerceproject-1-9s8s.onrender.com/removeCart",{
                                 method: "POST",
                                 headers:{
                                 "Content-Type": "application/json"
@@ -43,7 +43,7 @@ function Cart(){
                 setData1(data1.filter((obj)=>obj.id!=item.id))
                 setCartCount(pre=>pre-1)
 
-                const res2 =  fetch("http://localhost:3000/productCount",{
+                const res2 =  fetch("https://e-commerceproject-1-9s8s.onrender.com/productCount",{
                                 method: "POST",
                                 headers:{
                                 "Content-Type": "application/json"
