@@ -56,6 +56,20 @@ setFilterData(arr)
     // console.log(data1);
     // objkey.find((items)=>items==temp.toLowerCase()?(arr.push(obj)):null) .map((objkey)=>console.log(objkey))
 
+    function SkeletonLoader() {
+  return (
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-[40px] mb-[40px] mx-[40px]">
+      {[1, 2, 3, 4].map((n) => (
+        <div key={n} className="animate-pulse">
+          <div className="bg-gray-200 h-[300px] w-full rounded-lg mb-2"></div>
+          <div className="bg-gray-200 h-4 w-3/4 rounded mb-1"></div>
+          <div className="bg-gray-200 h-4 w-1/2 rounded"></div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 
 
     return(
@@ -102,7 +116,9 @@ setFilterData(arr)
             
 
                      {
-                        data.length==0 ? <>
+                        data.length==0 ? data1.length === 0 ? <>
+                                      <SkeletonLoader />   
+                            </> : <>
                         <div className=" md:flex md:justify-between md:ml-[71px] md:mr-[40px] mb-[40px] ">
                             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 md:gap-[40px] mb-[40px] md:w-[1409px] ">
                             {data1.map((item) =>(
