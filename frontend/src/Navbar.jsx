@@ -106,11 +106,11 @@ const {wishlistCount,cartCount}=useContext(WishlistContext)
                 <input className="bg-neutral-100 text-[12px] md:pr-[105px] py-[10px] pl-[10px] rounded-l-[6px] outline-none hidden md:block" type="textbox" placeholder="What are you looking for?"/>
                 <div className="bg-neutral-100 rounded-r-[6px] py-[6.5px] ml-[-3px]"><img src={image5} alt="" className=" hidden md:block h-[25px]  ml-[-3px] "/></div>
             </div>
-            <Link href="/Home/Wishlist">
+            <a href="/Home/Wishlist">
             <div className="relative ">
                 <img src={image2} alt="" className="size-[35px]" />
             </div>
-            </Link>
+            </a>
             <div className="flex justify-center text-white bg-[#DB4444] px-[3px] size-[12px] md:size-[15px] rounded-[20px] items-center absolute top-[32px] right-[68px] md:top-[45px] md:right-[116px]">
                                         <span className=" text-[10px] md:text-[12px] ">{wishlistCount}</span>
                     </div>
